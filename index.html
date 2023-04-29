@@ -2,9 +2,53 @@
 layout: default
 title: My Blog
 ---
-<h2>文章列表</h2>
-<ul>
-    \{\% for post in site.posts %}
-        <li>&#123;{ post.date | date:"%Y-%m-%d" }} <a href="&#123;{ post.url }}">&#123;{ post.title }}</a></li>
-    &#123;% endfor %}
-</ul>
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bioinformatics Insights Blog</title>
+  <!-- Add an external CSS file to style your homepage (optional) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Bioinformatics Insights</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>About the Blog</h2>
+      <p>Bioinformatics Insights is a blog dedicated to exploring the fascinating world of bioinformatics. We aim to share our knowledge and passion for the field by discussing topics such as genomics, proteomics, data analysis, and computational biology. Join us as we delve into the latest research, tools, and techniques that are shaping the future of bioinformatics.</p>
+    </section>
+
+    <section>
+      <h2>Latest Blog Posts</h2>
+      <article>
+        <h3><a href="blog-post-1.html">Introduction to Next-Generation Sequencing Data Analysis</a></h3>
+        <p>Discover the basics of next-generation sequencing data analysis, including read alignment, variant calling, and annotation. Learn how to use popular bioinformatics tools to analyze your own sequencing data.</p>
+      </article>
+      <article>
+        <h3><a href="blog-post-2.html">Protein Structure Prediction and Molecular Docking</a></h3>
+        <p>Explore the world of protein structure prediction and molecular docking, including the fundamentals of protein folding, homology modeling, and molecular interactions. Get started with tools and resources for protein structure analysis and drug discovery.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Bioinformatics Insights Blog. All rights reserved.</p>
+    <p>Contact: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+  </footer>
+
+</body>
+</html>
